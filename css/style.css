@@ -1,0 +1,390 @@
+/* ================= RESET ================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #F9FAFB;
+  color: #111827;
+  line-height: 1.6;
+}
+
+/* ================= NAVBAR ================= */
+header {
+  background: white;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.navbar {
+  max-width: 1200px;
+  margin: auto;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main_cn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.fa-house {
+  font-size: 1.8rem;
+  color: #4F46E5;
+}
+
+.logo {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #4F46E5;
+  white-space: nowrap;
+}
+
+/* Nav links */
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #111827;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: #4F46E5;
+}
+
+/* Toggle button */
+.menu-toggle {
+  display: none;
+  font-size: 26px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* Sticky effect */
+.navbar.sticky {
+  background: white;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+/* ================= HERO ================= */
+.hero {
+  max-width: 1200px;
+  margin: auto;
+  padding: 120px 20px 80px; /* top padding for fixed navbar */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.hero-content h1 {
+  font-size: 42px;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  color: #6B7280;
+  margin-bottom: 30px;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.btn {
+  padding: 12px 22px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.primary-btn {
+  background: #4F46E5;
+  color: white;
+}
+
+.primary-btn:hover {
+  background: #4338CA;
+}
+
+.secondary-btn {
+  border: 1px solid #4F46E5;
+  color: #4F46E5;
+}
+
+.secondary-btn:hover {
+  background: #4F46E5;
+  color: white;
+}
+
+.hero-image img {
+  width: 400px;
+  max-width: 100%;
+}
+
+/* ================= SECTIONS ================= */
+section {
+  padding: 70px 20px;
+}
+
+h2 {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 40px;
+}
+
+/* ================= ABOUT ================= */
+.about {
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.about img {
+  width: 450px;
+  max-width: 100%;
+}
+
+.about-content p {
+  color: #6B7280;
+}
+
+/* ================= SERVICES ================= */
+.services-container {
+  max-width: 1100px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+}
+
+.service-card {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+  text-align: center;
+  transition: 0.3s;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+}
+
+.service-card img {
+  width: 70px;
+  margin-bottom: 15px;
+}
+
+.service-card p {
+  color: #6B7280;
+}
+
+/* ================= WHY US ================= */
+.why-container {
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  gap: 25px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.why-box {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+  width: 300px;
+  text-align: center;
+}
+
+/* ================= TESTIMONIALS ================= */
+.testimonials-container {
+  max-width: 900px;
+  margin: auto;
+  display: flex;
+  gap: 25px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.testimonial-card {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+  width: 280px;
+}
+
+.testimonial-card p {
+  color: #6B7280;
+}
+
+/* ================= CONTACT ================= */
+.contact-form {
+  max-width: 500px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #E5E7EB;
+  font-family: inherit;
+}
+
+/* ================= FOOTER ================= */
+footer {
+  background: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+  color: #6B7280;
+}
+
+/* ================= ANIMATIONS ================= */
+.hero-content,
+.hero-image,
+.about-content,
+.about-image,
+.service-card,
+.why-box,
+.testimonial-card {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: 0.6s ease;
+}
+
+.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.btn.clicked {
+  transform: scale(0.95);
+}
+
+/* ================= RESPONSIVE ================= */
+
+/* Tablet & below */
+@media (max-width: 992px) {
+
+  .nav-links {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    height: 100vh;
+    width: 70%;
+    background: white;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    transition: 0.4s ease;
+    box-shadow: -5px 0 15px rgba(0,0,0,0.1);
+  }
+
+  .nav-links.active {
+    right: 0;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+/* Mobile */
+@media (max-width: 420px) {
+  .hero-content h1 {
+    font-size: 28px;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-buttons a {
+    width: 80%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 991px) {
+    .hero-buttons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+        flex-wrap: wrap;   /* agar space kam ho toh next line */
+    }
+}
+
+/* ===== Mobile Toggle Fix (No Code Change) ===== */
+@media (max-width: 992px) {
+
+  .menu-toggle {
+    display: block;
+    z-index: 1100;
+  }
+
+  .nav-links {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    height: 100vh;
+    width: 75%;
+    background: white;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    transition: 0.4s ease;
+  }
+
+  .nav-links.active {
+    right: 0;
+  }
+}
+
+/* Prevent scroll when mobile menu open */
+.no-scroll {
+  overflow: hidden;
+}
+
